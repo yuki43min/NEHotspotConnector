@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63088CB51F3C3CD00032F1B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63088CB41F3C3CD00032F1B2 /* AppDelegate.swift */; };
+		63088CB71F3C3CD00032F1B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63088CB61F3C3CD00032F1B2 /* ViewController.swift */; };
+		63088CBA1F3C3CD00032F1B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63088CB81F3C3CD00032F1B2 /* Main.storyboard */; };
+		63088CBC1F3C3CD00032F1B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63088CBB1F3C3CD00032F1B2 /* Assets.xcassets */; };
+		63088CBF1F3C3CD00032F1B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63088CBD1F3C3CD00032F1B2 /* LaunchScreen.storyboard */; };
+		63088CCA1F3C476C0032F1B2 /* define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63088CC91F3C476C0032F1B2 /* define.swift */; };
+		63088CCC1F3C477C0032F1B2 /* ViewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63088CCB1F3C477C0032F1B2 /* ViewControllerHelper.swift */; };
+		63088CD81F3C57880032F1B2 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63088CD71F3C57880032F1B2 /* NetworkExtension.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		63088CB11F3C3CD00032F1B2 /* NEHotspotConnector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NEHotspotConnector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63088CB41F3C3CD00032F1B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		63088CB61F3C3CD00032F1B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63088CB91F3C3CD00032F1B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63088CBB1F3C3CD00032F1B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63088CBE1F3C3CD00032F1B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63088CC01F3C3CD00032F1B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63088CC91F3C476C0032F1B2 /* define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = define.swift; sourceTree = "<group>"; };
+		63088CCB1F3C477C0032F1B2 /* ViewControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHelper.swift; sourceTree = "<group>"; };
+		63088CD01F3C53B90032F1B2 /* NEHotspotConnector.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NEHotspotConnector.entitlements; sourceTree = "<group>"; };
+		63088CD71F3C57880032F1B2 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63088CAE1F3C3CD00032F1B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63088CD81F3C57880032F1B2 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63088CA81F3C3CD00032F1B2 = {
+			isa = PBXGroup;
+			children = (
+				63088CB31F3C3CD00032F1B2 /* NEHotspotConnector */,
+				63088CB21F3C3CD00032F1B2 /* Products */,
+				63088CCD1F3C53B80032F1B2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		63088CB21F3C3CD00032F1B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63088CB11F3C3CD00032F1B2 /* NEHotspotConnector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63088CB31F3C3CD00032F1B2 /* NEHotspotConnector */ = {
+			isa = PBXGroup;
+			children = (
+				63088CD01F3C53B90032F1B2 /* NEHotspotConnector.entitlements */,
+				63088CC81F3C474E0032F1B2 /* Common */,
+				63088CB41F3C3CD00032F1B2 /* AppDelegate.swift */,
+				63088CB61F3C3CD00032F1B2 /* ViewController.swift */,
+				63088CB81F3C3CD00032F1B2 /* Main.storyboard */,
+				63088CBB1F3C3CD00032F1B2 /* Assets.xcassets */,
+				63088CBD1F3C3CD00032F1B2 /* LaunchScreen.storyboard */,
+				63088CC01F3C3CD00032F1B2 /* Info.plist */,
+			);
+			path = NEHotspotConnector;
+			sourceTree = "<group>";
+		};
+		63088CC81F3C474E0032F1B2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				63088CC91F3C476C0032F1B2 /* define.swift */,
+				63088CCB1F3C477C0032F1B2 /* ViewControllerHelper.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		63088CCD1F3C53B80032F1B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63088CD71F3C57880032F1B2 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63088CB01F3C3CD00032F1B2 /* NEHotspotConnector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63088CC31F3C3CD00032F1B2 /* Build configuration list for PBXNativeTarget "NEHotspotConnector" */;
+			buildPhases = (
+				63088CAD1F3C3CD00032F1B2 /* Sources */,
+				63088CAE1F3C3CD00032F1B2 /* Frameworks */,
+				63088CAF1F3C3CD00032F1B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NEHotspotConnector;
+			productName = NEHotspotConnector;
+			productReference = 63088CB11F3C3CD00032F1B2 /* NEHotspotConnector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63088CA91F3C3CD00032F1B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = Yuki.S;
+				TargetAttributes = {
+					63088CB01F3C3CD00032F1B2 = {
+						CreatedOnToolsVersion = 9.0;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.HotspotConfiguration = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 63088CAC1F3C3CD00032F1B2 /* Build configuration list for PBXProject "NEHotspotConnector" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63088CA81F3C3CD00032F1B2;
+			productRefGroup = 63088CB21F3C3CD00032F1B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63088CB01F3C3CD00032F1B2 /* NEHotspotConnector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63088CAF1F3C3CD00032F1B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63088CBF1F3C3CD00032F1B2 /* LaunchScreen.storyboard in Resources */,
+				63088CBC1F3C3CD00032F1B2 /* Assets.xcassets in Resources */,
+				63088CBA1F3C3CD00032F1B2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63088CAD1F3C3CD00032F1B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63088CCC1F3C477C0032F1B2 /* ViewControllerHelper.swift in Sources */,
+				63088CB71F3C3CD00032F1B2 /* ViewController.swift in Sources */,
+				63088CB51F3C3CD00032F1B2 /* AppDelegate.swift in Sources */,
+				63088CCA1F3C476C0032F1B2 /* define.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		63088CB81F3C3CD00032F1B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63088CB91F3C3CD00032F1B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63088CBD1F3C3CD00032F1B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63088CBE1F3C3CD00032F1B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63088CC11F3C3CD00032F1B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63088CC21F3C3CD00032F1B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63088CC41F3C3CD00032F1B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NEHotspotConnector/NEHotspotConnector.entitlements;
+				DEVELOPMENT_TEAM = 56M2NUXPP2;
+				INFOPLIST_FILE = NEHotspotConnector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.fxat.NEHotspotConnector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63088CC51F3C3CD00032F1B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NEHotspotConnector/NEHotspotConnector.entitlements;
+				DEVELOPMENT_TEAM = 56M2NUXPP2;
+				INFOPLIST_FILE = NEHotspotConnector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.co.fxat.NEHotspotConnector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63088CAC1F3C3CD00032F1B2 /* Build configuration list for PBXProject "NEHotspotConnector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63088CC11F3C3CD00032F1B2 /* Debug */,
+				63088CC21F3C3CD00032F1B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63088CC31F3C3CD00032F1B2 /* Build configuration list for PBXNativeTarget "NEHotspotConnector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63088CC41F3C3CD00032F1B2 /* Debug */,
+				63088CC51F3C3CD00032F1B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63088CA91F3C3CD00032F1B2 /* Project object */;
+}
