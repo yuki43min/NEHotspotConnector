@@ -14,6 +14,8 @@
 		63088CBF1F3C3CD00032F1B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63088CBD1F3C3CD00032F1B2 /* LaunchScreen.storyboard */; };
 		63088CCA1F3C476C0032F1B2 /* define.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63088CC91F3C476C0032F1B2 /* define.swift */; };
 		63088CCC1F3C477C0032F1B2 /* ViewControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63088CCB1F3C477C0032F1B2 /* ViewControllerHelper.swift */; };
+		637150521F42F11100AEFB41 /* InputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637150511F42F11100AEFB41 /* InputTableViewCell.swift */; };
+		637150541F42F4DC00AEFB41 /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637150531F42F4DC00AEFB41 /* SwitchTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		63088CCB1F3C477C0032F1B2 /* ViewControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHelper.swift; sourceTree = "<group>"; };
 		63088CD01F3C53B90032F1B2 /* NEHotspotConnector.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NEHotspotConnector.entitlements; sourceTree = "<group>"; };
 		6343DF541F41363B00CB6F53 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		637150511F42F11100AEFB41 /* InputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTableViewCell.swift; sourceTree = "<group>"; };
+		637150531F42F4DC00AEFB41 /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			children = (
 				63088CD01F3C53B90032F1B2 /* NEHotspotConnector.entitlements */,
 				63088CC81F3C474E0032F1B2 /* Common */,
+				637150501F42F0ED00AEFB41 /* View */,
 				63088CB41F3C3CD00032F1B2 /* AppDelegate.swift */,
 				63088CB61F3C3CD00032F1B2 /* ViewController.swift */,
 				63088CB81F3C3CD00032F1B2 /* Main.storyboard */,
@@ -88,6 +93,15 @@
 				6343DF541F41363B00CB6F53 /* NetworkExtension.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		637150501F42F0ED00AEFB41 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				637150511F42F11100AEFB41 /* InputTableViewCell.swift */,
+				637150531F42F4DC00AEFB41 /* SwitchTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,10 +186,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				637150521F42F11100AEFB41 /* InputTableViewCell.swift in Sources */,
 				63088CCC1F3C477C0032F1B2 /* ViewControllerHelper.swift in Sources */,
 				63088CB71F3C3CD00032F1B2 /* ViewController.swift in Sources */,
 				63088CB51F3C3CD00032F1B2 /* AppDelegate.swift in Sources */,
 				63088CCA1F3C476C0032F1B2 /* define.swift in Sources */,
+				637150541F42F4DC00AEFB41 /* SwitchTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

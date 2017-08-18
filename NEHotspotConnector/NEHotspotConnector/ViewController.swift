@@ -11,19 +11,25 @@ import NetworkExtension
 
 
 class ViewController: UIViewController {
-
-  @IBOutlet var navigationBar: UINavigationBar!
-  @IBOutlet var textFieldSSID: UITextField!
-  @IBOutlet var switchIsWEP: UISwitch!
-  @IBOutlet var textFieldPassword: UITextField!
-  @IBOutlet var buttonConnect: UIBarButtonItem!
+  let titles: [String] = ["SSID", "暗号化方式", "パスワード"]
   
+  @IBOutlet var navigationBar: UINavigationBar!
+  @IBOutlet var buttonConnect: UIBarButtonItem!
+  @IBOutlet var tableWifiSetting: UITableView!
+  
+  var ssid : String!
+  var passPhrase : String!
+  var isPasswordSwitchOn : Bool!
+
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.switchIsWEP.addTarget(self, action: #selector(switchChanged(swicth:)), for: UIControlEvents.valueChanged)
     self.buttonConnect.action = #selector(didTapButtonConnect(button:))
-    self.textFieldSSID.delegate = self
-    self.textFieldPassword.delegate = self
+    self.tableWifiSetting.delegate = self
+    self.tableWifiSetting.dataSource = self
+    
+    self.ssid = ""
+    self.passPhrase = ""
+    self.isPasswordSwitchOn = false
   }
 
   override func didReceiveMemoryWarning() {
@@ -31,12 +37,12 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
 
-  @objc func switchChanged(swicth: UISwitch) {
-    
+  @objc func switchChanged(uiSwitch: UISwitch) {
+    isPasswordSwitchOn = uiSwitch.isOn
   }
   
   @objc func didTapButtonConnect(button: UIBarButtonItem) {
-    connect(ssid: self.textFieldSSID.text!, passphrase: textFieldPassword.text!, isWEP: switchIsWEP.isOn)
+    connect(ssid: "", passphrase: "textFieldPassword.text", isWEP: true)
   }
   
   func connect(ssid: String, passphrase: String, isWEP: Bool) {
@@ -58,11 +64,67 @@ class ViewController: UIViewController {
   }
 }
 
-extension ViewController: UITextFieldDelegate {
+extension ViewController: UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
+  
+  
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 3
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    var cell : UITableViewCell? = nil
+    
+    switch (indexPath.row) {
+    case 0:
+      cell = InputTableViewCell.init(style: .default, reuseIdentifier: "test")
+      (cell as! InputTableViewCell).textFieldInput?.delegate = self;
+      (cell as! InputTableViewCell).textFieldInput?.placeholder = "入力してください...";
+      (cell as! InputTableViewCell).textFieldInput?.keyboardType = .default;
+      (cell as! InputTableViewCell).textFieldInput?.isEnabled = true;
+      (cell as! InputTableViewCell).textFieldInput?.text = self.ssid;
+      (cell as! InputTableViewCell).textFieldInput?.clearsOnBeginEditing = true;
+      break
+    case 1:
+      ccell = SwitchTableViewCell.init(style: .subtitle, reuseIdentifier: "test", withValue: isPasswordSwitchOn, withTag: 0, withTarget: self, action: #selector(didSwitchChanged))
+      break
+    case 2:
+      cell = InputTableViewCell.init(style: .default, reuseIdentifier: "test")
+      (cell as! InputTableViewCell).textFieldInput?.delegate = self;
+      (cell as! InputTableViewCell).textFieldInput?.placeholder = "入力してください...";
+      (cell as! InputTableViewCell).textFieldInput?.keyboardType = .default;
+      (cell as! InputTableViewCell).textFieldInput?.isSecureTextEntry = true;
+      (cell as! InputTableViewCell).textFieldInput?.isEnabled = true;
+      (cell as! InputTableViewCell).textFieldInput?.text = self.passPhrase;
+      (cell as! InputTableViewCell).textFieldInput?.clearsOnBeginEditing = true;
+      break;
+      
+    default: break
+    }
+
+    
+    cell?.textLabel?.text = self.titles[indexPath.row]
+    return cell!
+  }
+  
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+  }
+  
+  @objc func didSwitchChanged(sender: Any) {
+    let switchButton = sender as! UISwitch
+    self.isPasswordSwitchOn = switchButton.isOn
+  }
+  
+  
+  func textFieldDidEndEditing(_ textField: UITextField) {
+    self.passPhrase = textField.text;
+  }
+  
   func textFieldShouldReturn(_ textField: UITextField) -> Bool{
     // キーボードを閉じる
     textField.resignFirstResponder()
     return true
   }
+  
 }
 
