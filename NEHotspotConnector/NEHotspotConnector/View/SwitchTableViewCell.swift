@@ -25,10 +25,11 @@ class SwitchTableViewCell : UITableViewCell {
     self.textLabel?.accessibilityElementsHidden = true
     self.uiSwitch = UISwitch.init(frame: kRectUiSwitch)
     let view = UIView.init(frame: kRectContainer)
-    self.uiSwitch!.center = view.center
+    self.uiSwitch?.center = view.center
     view.addSubview(self.uiSwitch!)
     self.accessoryView = view
-    self.uiSwitch!.addTarget(target, action: action, for: .valueChanged)
-    self.uiSwitch!.tag = tag
+    self.uiSwitch?.addTarget(target, action: action, for: .valueChanged)
+    self.uiSwitch?.isOn = withValue
+    self.uiSwitch?.tag = tag
   }
 }

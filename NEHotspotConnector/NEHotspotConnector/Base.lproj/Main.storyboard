@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,7 +27,11 @@
                                 <rect key="frame" x="0.0" y="343" width="667" height="32"/>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="1UE-PF-eeb"/>
+                                    <barButtonItem title="Item" id="Bhz-Jd-gtG"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Cev-7B-U0q"/>
                                     <barButtonItem title="Item" id="kz8-pT-a2S"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fl2-H8-JxJ"/>
+                                    <barButtonItem title="Item" id="Yxn-pS-sE2"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="iDZ-q1-e7q"/>
                                 </items>
                             </toolbar>
@@ -54,6 +58,8 @@
                     </view>
                     <connections>
                         <outlet property="buttonConnect" destination="kz8-pT-a2S" id="Y81-6c-OWd"/>
+                        <outlet property="buttonConnectedSSID" destination="Bhz-Jd-gtG" id="GER-AH-aVf"/>
+                        <outlet property="buttonDisconnect" destination="Yxn-pS-sE2" id="3k8-QT-N4m"/>
                         <outlet property="navigationBar" destination="PqR-YL-hVt" id="jSx-wX-2ZI"/>
                         <outlet property="tableWifiSetting" destination="dkg-Ml-Ygf" id="bse-S9-PsW"/>
                     </connections>
